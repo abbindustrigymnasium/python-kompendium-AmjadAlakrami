@@ -1,10 +1,11 @@
+#skapar listor
 male = [
 " Erik ",
 " Lars ",
 " Karl ",
 " Anders ",
 " Johan "
-]
+]  
 female = [
 " Maria ",
 " Anna ",
@@ -12,7 +13,11 @@ female = [
 " Elisabeth ",
 "Eva"
 ]
-male.sort()
+
+# sorterar male listan efterboktavordning 
+male.sort() 
 female.sort()
+
+#printa ut listorana
 print(male)
 print(female)

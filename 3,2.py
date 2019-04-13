@@ -1,3 +1,4 @@
+#skapar listor
 male = [
 " Erik ",
 " Lars ",
@@ -12,8 +13,10 @@ female = [
 " Elisabeth ",
 "Eva"
 ]
-male.remove(" Lars " )
+male.remove(" Lars " ) # ta bort lars från male listan 
 male.remove(" Karl ")
 female.remove(" Maria ")
-print(male)
+
+#printa ut male och female 
+print(male) 
 print(female)

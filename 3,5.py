@@ -1,3 +1,4 @@
+#skapar listor
 male = [
 "Erik",
 "Lars",
@@ -13,11 +14,15 @@ female = [
 "Eva"
 ]
 
-a = input("vilket namn vill du ta bort från listan "+ str(male))
+# input variablar
+a = input("vilket namn vill du ta bort från listan "+ str(male)) 
 b = input("vilket namn vill du ta bort från listan"+ str(female))
 
-male.remove (a)
+male.remove (a) # ta bort den användaren matade in i input a från male listaan 
 female.remove(b)
+
+# printa ut 
 print(male)
 print(female)
+
 

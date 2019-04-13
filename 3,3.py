@@ -1,3 +1,4 @@
+#skapar listor
 male = [
 " Erik ",
 " Lars ",
@@ -12,5 +13,6 @@ female = [
 " Elisabeth ",
 "Eva"
 ]
-male.append("Amjad")
+
+male.append("Amjad") # lägg till amjad till male listan
 print(male)

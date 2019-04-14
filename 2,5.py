@@ -1,22 +1,25 @@
 import math # importerar math bibloteket
 
 
-a = input("Hur många elever vill ha 2 Vanilga korvar ?") # input variabel 
-b = input("Hur många elver vill ha 3 Vanliga korvar ? ")
-c = input("Hur många elever vill ha 2 Veganska korvar ?")
-d = input("Hur många elever vill ha 3 veganska korvar ?")
-g = input ("Hur många elever vill ha en dryck? ")
+vanligaKorv2 = input("Hur många elever vill ha 2 Vanilga korvar ?") # input variabel 
+vanligaKorv3 = input("Hur många elver vill ha 3 Vanliga korvar ? ")
+veganskaKorv2= input("Hur många elever vill ha 2 Veganska korvar ?")
+veganskaKorv3 = input("Hur många elever vill ha 3 veganska korvar ?")
+drycka = input ("Hur många elever vill ha en dryck? ")
 
-e = (2 * int(a)) + (3 * int(a)) #variabel e = 2 * a + 3 * a, där a är en int 
-f = (2 * int(c)) + (3 * int(d))
-
-print ("Vanlig Korv:" + " " + str(math.ceil((int(e)/8) )) + " " + "Förpackningar" )  # printar ut vanliga korv + variabel e/8 .. vi använder math.ceil funktionen från math biblotek för att avrunda uppåt 
-print ("Veganska Korv:" + " " + str(math.ceil((int(f)/4) ))+ " " + "Förpackningar")
-print ("Dryckor:" + " " + str(g))
-
-h = int(str(math.ceil((int(e)/8) ))) * float (20.95)
-i = int(str(math.ceil((int(f)/4) )))* float (34.95)
-j = int(g) * float(13.95)
-k= int(h) + int(i) + int(j)
-print ("Det kostar totalt:" + " " + str(k) + " " + "SEK")
+totvanlig = (2 * int(vanligaKorv2)) + (3 * int(vanligaKorv3)) #multiplikation för att räkna totala antalet vanliga korv
+totvegansk = (2 * int(veganskaKorv2)) + (3 * int(veganskaKorv3))
+print (25 * "*")
+print ("Vanlig Korv:" + " " + str(math.ceil((int(totvanlig)/8) )) + " " + "Förpackningar" )  # printar ut vanliga korv + variabel e/8 .. vi använder math.ceil funktionen från math biblotek för att avrunda uppåt 
+print (25 * "*")
+print ("Veganska Korv:" + " " + str(math.ceil((int(totvegansk)/4) ))+ " " + "Förpackningar")
+print (25 * "*")
+print ("Dryckor:" + " " + str(drycka))
+print (25 * "*")
+prisvanlig= int(str(math.ceil((int(totvanlig)/8) ))) * float (20.95)
+prisveganska = int(str(math.ceil((int(totvegansk)/4) )))* float (34.95)
+prisdrycka = int(drycka) * float(13.95)
+totlapriset= int(prisvanlig) + int(prisveganska) + int(prisdrycka)
+print ("Det kostar totalt:" + " " + str(totlapriset) + " " + "SEK")
+print (25 * "-")
 

@@ -14,15 +14,15 @@ for artistinfo in res['artists']:
     if (artistInput.title()  == artistinfo['name']): #om inmatningen är det smamma som artistens namn
         r = requests.get("https://5hyqtreww2.execute-api.eu-north-1.amazonaws.com/artists/" + artistinfo["id"]) #skivka enm get request för den urlen 
         res = r.json() 
-        print (100* "-") 
-        print ("Namn        :  " + artistInput )
-        print (100* "-") 
+        print (50* "-") 
+        print ("Namn        :  " + artistInput.title() )
+        print (50* "-") 
         print("Genres      :  " + str(res["artist"]["genres"]))
-        print (100* "-") 
+        print (50* "-") 
         print("Years active:  " + str(res["artist"]["years_active"]))
-        print (100* "-") 
+        print (50* "-") 
         print("Members     :  " + str(res["artist"]["members"]))
-        print (100* "-") 
+        print (50* "-") 
 #printa ut
 
 

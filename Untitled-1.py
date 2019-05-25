@@ -1,0 +1,2 @@
+Min = "bilal"
+print ("Min")

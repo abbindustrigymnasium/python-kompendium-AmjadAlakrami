@@ -1,2 +1,0 @@
-Min = "bilal"
-print ("Min")
